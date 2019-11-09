@@ -2,18 +2,23 @@ import telebot
 
 import settings
 
-bot = telebot.TeleBot(settings.TOKEN)
+from classifier.classifier import Classifier
+from classifier.data.image_processing import image_from_bytes
 
-classifier = Classifier()
+bot = telebot.TeleBot(settings.TOKEN,)
 
-@bot.message_handler(content_types=['text'])
+classifier = Classifier(settings.BASIC_NET_PATH, settings.DEVICE)
+
+
+@bot.message_handler(content_types=['photo'])
 def get_text_messages(message):
-    if message.text == "Привет":
-        bot.send_message(message.from_user.id, "Привет, чем я могу тебе помочь?")
-    elif message.text == "/help":
-        bot.send_message(message.from_user.id, "Напиши привет")
-    else:
-        bot.send_message(message.from_user.id, "Я тебя не понимаю. Напиши /help.")
+    fileID = message.photo[-1].file_id
+    file = bot.get_file(fileID)
+    downloaded_file = bot.download_file(file.file_path)
+    image = image_from_bytes(downloaded_file)
+
+    class_label = classifier.predict(image)
+    bot.send_message(message.chat.id, str(class_label))
 
 
-bot.polling()
+bot.polling(none_stop=True, timeout=90)
