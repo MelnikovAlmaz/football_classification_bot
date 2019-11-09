@@ -4,6 +4,7 @@ import settings
 
 bot = telebot.TeleBot(settings.TOKEN)
 
+classifier = Classifier()
 
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
