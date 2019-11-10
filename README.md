@@ -20,11 +20,11 @@ There are 25 types of persons:
 **Examples**:
 
 <img src="https://gitlab.com/MelnikovAlmaz/football_classification_bot/uploads/2761794beeebe31ee9509bad6bb767ad/yellow_goalkeeper.png" height="120px"/>
-<img src="https://gitlab.com/MelnikovAlmaz/football_classification_bot/blob/master/readme_files/blue_player.png" height="120px"/>
-<img src="https://gitlab.com/MelnikovAlmaz/football_classification_bot/blob/master/readme_files/white_player.png" height="120px"/>
-<img src="https://gitlab.com/MelnikovAlmaz/football_classification_bot/blob/master/readme_files/referee.png" height="120px"/>
-<img src="https://gitlab.com/MelnikovAlmaz/football_classification_bot/blob/master/readme_files/linesman.png" height="120px"/>
-<img src="https://gitlab.com/MelnikovAlmaz/football_classification_bot/blob/master/readme_files/other.png" height="120px"/>
+<img src="https://gitlab.com/MelnikovAlmaz/football_classification_bot/uploads/463c7f6c0a373cd0a9a5cbadac2e3f66/blue_player.png" height="120px"/>
+<img src="https://gitlab.com/MelnikovAlmaz/football_classification_bot/uploads/6df42babb65082637755bdb3c78f1848/white_player.png" height="120px"/>
+<img src="https://gitlab.com/MelnikovAlmaz/football_classification_bot/uploads/24c16bf03a29b0483e8e651896e7657b/referee.png" height="120px"/>
+<img src="https://gitlab.com/MelnikovAlmaz/football_classification_bot/uploads/385777fff318a39e30620ad347fa20da/linesman.png" height="120px"/>
+<img src="https://gitlab.com/MelnikovAlmaz/football_classification_bot/uploads/4607e7ec829d703cc7758fa5bb5fb932/other.png" height="120px"/>
 
 
 ### Classifier
