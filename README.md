@@ -19,7 +19,7 @@ There are 25 types of persons:
  
 **Examples**:
 
-<img src="https://gitlab.com/MelnikovAlmaz/football_classification_bot/blob/master/readme_files/yellow_goalkeeper.png" height="120px"/>
+<img src="https://gitlab.com/MelnikovAlmaz/football_classification_bot/uploads/2761794beeebe31ee9509bad6bb767ad/yellow_goalkeeper.png" height="120px"/>
 <img src="https://gitlab.com/MelnikovAlmaz/football_classification_bot/blob/master/readme_files/blue_player.png" height="120px"/>
 <img src="https://gitlab.com/MelnikovAlmaz/football_classification_bot/blob/master/readme_files/white_player.png" height="120px"/>
 <img src="https://gitlab.com/MelnikovAlmaz/football_classification_bot/blob/master/readme_files/referee.png" height="120px"/>
