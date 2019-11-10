@@ -1,16 +1,13 @@
 import io
 
-import cv2
-import numpy
 from PIL import Image
 
 
-def image_from_bytes(image_bytes):
+def image_from_file(file):
     """
-    Convert file from Flask request.data to 3D Numpy array
-    :param image_file: file from Flask request.data, bytes object
-    :return: 3D Numpy array, np.array()
+    Convert file to Pillow Image
+    :param file: image file
+    :return: Pillow Image
     """
-    # Check image to correct format
-    image = Image.open(io.BytesIO(image_bytes))
+    image = Image.open(io.BytesIO(file))
     return image
