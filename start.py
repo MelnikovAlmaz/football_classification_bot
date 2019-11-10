@@ -7,7 +7,11 @@ from classifier.data.image_processing import image_from_bytes
 
 bot = telebot.TeleBot(settings.TOKEN,)
 
-classifier = Classifier(settings.BASIC_NET_PATH, settings.DEVICE)
+classifier = Classifier(
+    base_net_path=settings.BASIC_NET_PATH,
+    refferi_net_path=settings.REFFERI_NET_PATH,
+    device=settings.DEVICE
+)
 
 
 @bot.message_handler(content_types=['photo'])
