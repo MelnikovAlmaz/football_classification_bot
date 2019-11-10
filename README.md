@@ -1,6 +1,7 @@
 # Football match person classification Telegram Bot
 
-This Telegram Bot is solution for <a href="https://challenge.uma.tech/">UmaTech.Challenge</a> hackathon's Machine Learning track.
+This Telegram Bot is solution for <a href="https://challenge.uma.tech/">UmaTech.Challenge</a> hackathon's Machine Learning track.<br>
+Bot alias: @FootballUmaTechBot
 
 ### Task
 Create Telegram Bot that receive photo of person on football match and predict type of that person.
