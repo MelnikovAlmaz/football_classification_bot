@@ -1,4 +1,5 @@
 import telebot
+from flask import Flask, request
 
 import settings
 
@@ -6,6 +7,7 @@ from classifier.classifier import Classifier
 from classifier.data.image_processing import image_from_file
 
 bot = telebot.TeleBot(settings.TOKEN,)
+server = Flask(__name__)
 
 # Init image classifier
 classifier = Classifier(
