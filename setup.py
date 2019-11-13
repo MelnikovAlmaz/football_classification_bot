@@ -36,7 +36,20 @@ def get_photo_message(message):
     # Send label as answer to chat
     bot.send_message(message.chat.id, str(class_label))
 
+@server.route('/' + settings.TOKEN, methods=['POST'])
+def getMessage():
+    bot.process_new_updates([telebot.types.Update.de_json(request.stream.read().decode("utf-8"))])
+    return "!", 200
 
-# Start pooling messages from bot
-bot.polling(none_stop=True, timeout=90)
+
+@server.route("/")
+def webhook():
+    bot.remove_webhook()
+    bot.set_webhook(url='https://fbumabot.herokuapp.com/' + settings.TOKEN)
+    return "!", 200
+
+
+if __name__ == "__main__":
+    server.run(host="0.0.0.0", port=int(os.environ.get('PORT', 5000)))
+
 
